@@ -2,4 +2,14 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  form.assignmentForm
+      label Assignment Number:
+        input(name="assignment_number" id="assignmentNumber" type="number")
+      label Student Name:
+        input(name="student_name" id="studentName" type="text")
+      label Score %:
+        input(name="score" id="score" type="text")
+      label ID:
+        input(name="id" id="id" type="number")
+      button(type="submit") SUBMIT
+  .appendHere
